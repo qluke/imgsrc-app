@@ -56,54 +56,54 @@ const templateFilters: TemplateFilter[] = [
     width: 1200,
     height: 630,
   },
-  // {
-  //   platform: "blog",
-  //   label: "Wide (16:9)",
-  //   width: 1200,
-  //   height: 630,
-  // },
-  // {
-  //   platform: "facebook",
-  //   label: "Post",
-  //   width: 1200,
-  //   height: 630,
-  // },
-  // {
-  //   platform: "facebook",
-  //   label: "Cover",
-  //   width: 820,
-  //   height: 360,
-  // },
-  // {
-  //   platform: "x",
-  //   label: "Post",
-  //   width: 1024,
-  //   height: 512,
-  // },
+  {
+    platform: "blog",
+    label: "Wide (16:9)",
+    width: 1200,
+    height: 630,
+  },
+  {
+    platform: "facebook",
+    label: "Post",
+    width: 1200,
+    height: 630,
+  },
+  {
+    platform: "facebook",
+    label: "Cover",
+    width: 820,
+    height: 360,
+  },
+  {
+    platform: "x",
+    label: "Post",
+    width: 1024,
+    height: 512,
+  },
   {
     platform: "x",
     label: "Header",
     width: 1500,
     height: 500,
   },
-  // {
-  //   platform: "linkedin",
-  //   label: "Post",
-  //   width: 1200,
-  //   height: 627,
-  // },
-  // {
-  //   platform: "linkedin",
-  //   label: "Header",
-  //   width: 1584,
-  //   height: 396,
-  // },
-  // {
-  //   platform: "product-hunt",
-  //   label: "Post",
-  //   width: 1600,
-  //   height: 900,
-  // },
+  {
+    platform: "linkedin",
+    label: "Post",
+    width: 1200,
+    height: 627,
+  },
+  {
+    platform: "linkedin",
+    label: "Header",
+    width: 1584,
+    height: 396,
+  },
+  {
+    platform: "product-hunt",
+    label: "Post",
+    width: 1600,
+    height: 900,
+  },
 ]
 
 const platforms: Record<Platform, PlatformProps> = {
@@ -179,6 +179,77 @@ const templates = [
     skeleton: skeletons["og:notice"],
   },
 
+  // Blog (16:9)
+  {
+    platform: "blog",
+    name: "blog:featured",
+    width: 1200,
+    height: 630,
+    skeleton: skeletons["blog:featured"],
+  },
+  {
+    platform: "blog",
+    name: "blog:title",
+    width: 1200,
+    height: 630,
+    skeleton: skeletons["blog:title"],
+  },
+  {
+    platform: "blog",
+    name: "blog:cover",
+    width: 1200,
+    height: 630,
+    skeleton: skeletons["blog:cover"],
+  },
+
+  // Facebook Post
+  {
+    platform: "facebook",
+    name: "facebook:post-basic",
+    width: 1200,
+    height: 630,
+    skeleton: skeletons["facebook:post-basic"],
+  },
+  {
+    platform: "facebook",
+    name: "facebook:post-promotion",
+    width: 1200,
+    height: 630,
+    skeleton: skeletons["facebook:post-promotion"],
+  },
+
+  // Facebook Cover
+  {
+    platform: "facebook",
+    name: "facebook:cover-simple",
+    width: 820,
+    height: 360,
+    skeleton: skeletons["facebook:cover-simple"],
+  },
+  {
+    platform: "facebook",
+    name: "facebook:cover-branded",
+    width: 820,
+    height: 360,
+    skeleton: skeletons["facebook:cover-branded"],
+  },
+
+  // Twitter/X Post
+  {
+    platform: "x",
+    name: "x:post-standard",
+    width: 1024,
+    height: 512,
+    skeleton: skeletons["x:post-standard"],
+  },
+  {
+    platform: "x",
+    name: "x:post-promo",
+    width: 1024,
+    height: 512,
+    skeleton: skeletons["x:post-promo"],
+  },
+
   // Twitter/X Header
   {
     platform: "x",
@@ -200,6 +271,54 @@ const templates = [
     width: 1500,
     height: 500,
     skeleton: skeletons["x:header-logo"],
+  },
+
+  // LinkedIn Post
+  {
+    platform: "linkedin",
+    name: "linkedin:post-basic",
+    width: 1200,
+    height: 627,
+    skeleton: skeletons["linkedin:post-basic"],
+  },
+  {
+    platform: "linkedin",
+    name: "linkedin:post-feature",
+    width: 1200,
+    height: 627,
+    skeleton: skeletons["linkedin:post-feature"],
+  },
+
+  // LinkedIn Header
+  {
+    platform: "linkedin",
+    name: "linkedin:header-simple",
+    width: 1584,
+    height: 396,
+    skeleton: skeletons["linkedin:header-simple"],
+  },
+  {
+    platform: "linkedin",
+    name: "linkedin:header-branded",
+    width: 1584,
+    height: 396,
+    skeleton: skeletons["linkedin:header-branded"],
+  },
+
+  // Product Hunt
+  {
+    platform: "product-hunt",
+    name: "product-hunt:launch",
+    width: 1600,
+    height: 900,
+    skeleton: skeletons["product-hunt:launch"],
+  },
+  {
+    platform: "product-hunt",
+    name: "product-hunt:feature",
+    width: 1600,
+    height: 900,
+    skeleton: skeletons["product-hunt:feature"],
   },
 ]
 
